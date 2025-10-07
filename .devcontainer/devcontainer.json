@@ -1,0 +1,12 @@
+{
+  "name": "DevOps Lab",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "docker-in-docker": "latest",
+    "terraform": "latest",
+    "kubectl": "latest",
+    "aws-cli": "latest"
+  },
+  "forwardPorts": [8080],
+  "postCreateCommand": "echo 'Ready to roll!'"
+}
