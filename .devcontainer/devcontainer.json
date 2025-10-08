@@ -1,12 +1,20 @@
 {
-  "name": "DevOps Lab",
+  "name": "Rons DevOps Lab",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
     "docker-in-docker": "latest",
     "terraform": "latest",
     "kubectl": "latest",
+    "helm": "latest",
     "aws-cli": "latest"
   },
   "forwardPorts": [8080],
-  "postCreateCommand": "echo 'Ready to roll!'"
+  "postCreateCommand": "echo 'Ready to roll!'",
+  "customizations": {
+   "vscode": {
+     "settings": {
+       "vscode-kubernetes.help-path": "/usr/local/bin/helm"
+     }
+   }
+  }
 }
